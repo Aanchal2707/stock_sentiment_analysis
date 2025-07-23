@@ -1,8 +1,8 @@
 **Stock Sentiment Analysis using Random Forest and Bag of Words**
 This project performs sentiment analysis on financial news headlines to predict stock market trends. Using the Bag of Words model and a Random Forest classifier, the system identifies whether public sentiment is positive or negative based on textual data from news sources.
-**Project Overview**
+\n**Project Overview**
 The dataset contains daily news headlines for specific dates, along with sentiment labels. The goal is to use past news data to predict the sentiment label of stock market news, which could be helpful for investors and analysts in decision-making.
-**Workflow**
+\n**Workflow**
 1.Data Splitting
 The dataset is split into training and testing data using a cutoff date (train = df[df['Date'] < '20150101'], test = df[df['Date'] > '20141231']).
 
