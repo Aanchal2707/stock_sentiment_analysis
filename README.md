@@ -1,13 +1,3 @@
 Stock Sentiment Analysis using Random Forest and Bag of Words is a project focused on predicting stock market trends by performing sentiment analysis on financial news headlines. The dataset includes daily news headlines along with sentiment labels. The data is split into training and testing sets using a specific cutoff date. Preprocessing steps include removing non-alphabetic characters using regex, renaming columns for convenience, converting all text to lowercase, and combining 25 headlines into a single string per row. For feature extraction, a Bag of Words model using CountVectorizer with bigrams (ngram_range=(2, 2)) is implemented, transforming the headlines into numerical vectors. A Random Forest Classifier with 200 estimators and 'entropy' as the criterion is then trained on the dataset. The model’s predictions on the test data are evaluated using confusion matrix, accuracy score, and classification report. The final accuracy of the model is 85.18%, with precision, recall, and F1-scores indicating strong performance: for label 0 (negative sentiment), precision is 0.99 and recall is 0.70, while for label 1 (positive sentiment), precision is 0.78 and recall is 0.99. These results suggest that the model performs reliably in identifying sentiments based on textual financial news, making it a useful tool for analysts and investors.
-##Results
-Accuracy: 85.18%
-              precision    recall  f1-score   support
-
-           0       0.99      0.70      0.82       186
-           1       0.78      0.99      0.87       192
-
-    accuracy                           0.85       378
-   macro avg       0.88      0.85      0.85       378
-weighted avg       0.88      0.85      0.85       378
 
 
